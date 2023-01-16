@@ -27,3 +27,9 @@ function addNote(){
 function updateNote(id, newNoteContent){
   
 }
+
+// deletes notes
+
+function deleteNote(){
+    
+}
