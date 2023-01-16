@@ -1,6 +1,12 @@
 const container = document.getElementById("main");
 const buttonAdd = container.querySelector("btn");
 
+obtainNote().array.forEach(note => {
+    const noteEle = createNote(note.id, note.content);
+
+    container.insertBefore(noteEle, buttonAdd);
+});
+
 //declaring functions
 //function to get notes
 function obtainNote(){
