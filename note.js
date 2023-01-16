@@ -1,7 +1,10 @@
+const container = document.getElementById("main");
+const buttonAdd = container.querySelector("btn");
+
 //declaring functions
 //function to get notes
 function obtainNote(){
-
+  
 }
 //to save note, takes in an array of notes
 
@@ -31,5 +34,5 @@ function updateNote(id, newNoteContent){
 // deletes notes
 
 function deleteNote(){
-    
+
 }
