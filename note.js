@@ -22,7 +22,24 @@ function createNote(id, noteContent){
   elm.value = content;
   elm.placeholder = "Add a note";
 
-  
+   elm.addEventListener("change", () => {
+
+     updateNote(id, elm.value);
+
+   });
+
+   elm.addEventListener("dblclick", () => {
+
+    const doDelete = confirm("Are you sure you want to delete this note?");
+     
+     if(doDelete){
+        deleteNote(id,elm)
+     }
+
+    updateNote(id, elm.value);
+
+  });
+
 
   return elm;
 }
